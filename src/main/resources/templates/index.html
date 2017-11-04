@@ -5,8 +5,29 @@
 <title>Insert title here</title>
 </head>
 <body>
+<table>
+	<tr>
+		<th>Authorization</th>
+		<th>Payment</th>
+		<th>Capture</th>
+	</tr>
+	<tr>
+		<td>
+<form method="post" th:action="@{/auth}">
+	<button type="submit"> Process Auth </button>
+</form>
+		</td>
+		<td>
 <form method="post" th:action="@{/pay}">
 	<button type="submit"> Process Payment </button>
 </form>
+		</td>
+		<td>
+<form method="post" th:action="@{/capture}">
+	<button type="submit"> Process Capture </button>
+</form>
+	   </td>
+</tr>
+</table>
 </body>
 </html>
